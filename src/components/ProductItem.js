@@ -12,7 +12,7 @@ class ProductItem extends Component {
 		}
 
 		openJSON = () => {
-			const products = require('./data/products.json');
+			const products = require('../data/products.json');
 			return(products);
 		}
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProductItem from './ProductItem'
+import ProductItem from './components/ProductItem'
 import Cart from './components/cart'
 import './App.css';
 
