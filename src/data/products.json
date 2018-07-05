@@ -1,0 +1,51 @@
+[
+	{
+		"id":1,
+		"name":"Merida Big Nine 300",
+		"price":"35000",
+		"stock": 23,
+		"info":"lorem ipsum"
+	},
+	{
+		"id":2,
+		"name":"Merida Big Nine 600",
+		"price":"45000",
+		"stock": 13,
+		"info":"lorem ipsum"
+	},
+	{
+		"id":3,
+		"name":"Merida Big Nine 900",
+		"price":"55000",
+		"stock": 69,
+		"info":"lorem ipsum"
+	},
+	{
+		"id":4,
+		"name":"Giant Fathom 1",
+		"price":"25000",
+		"stock": 3,
+		"info":"lorem ipsum"
+	},
+	{
+		"id":5,
+		"name":"Giant Fathom 2",
+		"price":"35000",
+		"stock": 2,
+		"info":"lorem ipsum"
+	},
+	{
+		"id":6,
+		"name":"Giant Talon 1",
+		"price":"45000",
+		"stock": 7,
+		"info":"lorem ipsum"
+	},
+	{
+		"id":7,
+		"name":"Giant Talon 2",
+		"price":"25000",
+		"stock": 6,
+		"info":"lorem ipsum"
+	}
+]
