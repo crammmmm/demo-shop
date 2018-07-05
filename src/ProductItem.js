@@ -40,10 +40,8 @@ class ProductItem extends Component {
 		onClickRemove = () => {		
 			let products = this.openJSON();	
 			let currentStock = this.state.itemCount;
-			alert(currentStock)
 			currentStock = currentStock + parseFloat(this.state.currentOrder);
 			products[this.props.index].stock = currentStock;
-			alert(JSON.stringify(products[this.props.index].stock))
 
 			var cart = [];
 		    cart.push(products);

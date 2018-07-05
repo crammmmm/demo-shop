@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 import ProductItem from './ProductItem'
+import Cart from './components/cart'
 import './App.css';
 
 class Shop extends Component {
-  /*constructor(){
-    super();
-    this.state={
-      currentCart: [],
-      itemCount: 0
-    };
-  }*/
+  componentDidMount(){
+    //super();
+    let products = this.openJSON();
+    var cart = [];
+    cart.push(products);
+    localStorage.setItem('blabla', JSON.stringify(cart));  
+    
+  }
+
+  openJSON = () => {
+      const products = require('./data/products.json');
+      return(products);
+  }
 
   displayItems = () => {
     const products = require('./data/products.json');
@@ -35,10 +42,15 @@ class Shop extends Component {
     return (        
         <div>
           <div className="App-header">
-            <button onClick={this.onClick}>CHECK OUT</button>
             <p>THRiFT BiKES</p>
           </div>
-          {this.displayItems()}
+          <section className="ItemSection">
+            {this.displayItems()}
+          </section>
+          <section className="CartSection">
+            <Cart/>
+            <button onClick={this.onClick}>CHECK OUT</button>            
+          </section>
           
         </div>      
     );
